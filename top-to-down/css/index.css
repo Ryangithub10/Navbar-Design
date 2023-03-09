@@ -1,0 +1,21 @@
+@import url("./template.css");
+
+header {
+  overflow: hidden;
+  transition: height var(--ease-transition-1);
+  display: grid;
+  grid-template-rows: 4rem 1fr;
+}
+
+hr {
+  width: 100vw;
+  border: 2px solid hsla(188.7, 30%, 42.7%, 0.523);
+  position: absolute;
+  top: 4rem;
+}
+
+nav {
+  height: 12rem;
+  padding: 1rem 0;
+  flex-direction: column;
+}
