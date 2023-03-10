@@ -4,33 +4,41 @@ aside {
   background-color: var(--secondary-color);
   height: 100vh;
   width: 50vw;
+  padding-left: 0.5rem;
   position: absolute;
-  left: 0;
-  box-shadow: var(--shadow-y-sm);
-  transform: translateX(-50vw);
+  right: 0;
+  top: 0;
+  transform: translateX(50vw);
   transition: transform var(--ease-transition-1);
+}
+
+.dark-effect::before {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: -100vw;
 }
 
 aside .wrapper {
   height: var(--navbar-height);
-  padding-right: 0.5rem;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 nav {
   height: 10rem;
-  padding-right: 0.5rem;
   flex-direction: column;
 }
 
 nav a {
   width: 100%;
-  text-align: right;
-  padding-right: 0.5rem;
+  text-align: left;
+  padding-left: 0.5rem;
 }
 
 nav .active {
-  border-radius: 0 25px 25px 0;
+  border-radius: 25px 0 0 25px;
 }

@@ -8,5 +8,6 @@ const toggleClass = (element, cls) => {
 hamburgerBtns.forEach((btn) => {
   btn.onclick = () => {
     toggleClass(aside, "show-content-aside");
+    toggleClass(aside, "dark-effect");
   };
 });
