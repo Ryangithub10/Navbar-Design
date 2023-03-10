@@ -16,8 +16,3 @@ nav {
   transform-origin: right top;
   transition: all var(--ease-transition-1);
 }
-
-nav .active {
-  width: auto;
-  height: auto;
-}
