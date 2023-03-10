@@ -1,0 +1,23 @@
+@import url("./template.css");
+
+nav {
+  background-color: var(--secondary-color);
+  width: 10rem;
+  height: 12rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  right: 1.5rem;
+  position: absolute;
+  opacity: 0;
+  box-shadow: var(--shadow-x-sm);
+  border-radius: 2.5px;
+  flex-direction: column;
+  transform: translateY(-3rem) scale(0);
+  transform-origin: right top;
+  transition: all var(--ease-transition-1);
+}
+
+nav .active {
+  width: auto;
+  height: auto;
+}
