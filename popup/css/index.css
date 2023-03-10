@@ -16,3 +16,7 @@ nav {
   transform-origin: right top;
   transition: all var(--ease-transition-1);
 }
+
+nav a {
+  padding-left: 0.5rem;
+}
