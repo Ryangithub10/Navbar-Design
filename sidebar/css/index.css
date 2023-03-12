@@ -12,6 +12,10 @@ aside {
   transition: transform var(--ease-transition-1);
 }
 
+aside.dark-effect {
+  box-shadow: 0 0 0 1000000px rgba(0, 0, 0, 0.5);
+}
+
 aside .wrapper {
   height: var(--navbar-height);
   display: flex;
