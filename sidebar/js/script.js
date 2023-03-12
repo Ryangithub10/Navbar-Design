@@ -8,6 +8,14 @@ const toggleClass = (element, cls) => {
 hamburgerBtns.forEach((btn) => {
   btn.onclick = () => {
     toggleClass(aside, "show-content-aside");
-    toggleClass(aside, "dark-effect");
   };
 });
+
+document.onclick = function (event) {
+  const clickWidth = event.clientX;
+  const isOutSideClicked = clickWidth < 200 && event.target.tagName !== "ASIDE";
+
+  if (isOutSideClicked) {
+    aside.classList.remove("show-content-aside");
+  }
+};
